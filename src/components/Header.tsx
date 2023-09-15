@@ -99,9 +99,9 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="bg-slate-50 py-8">
+    <header className="absolute z-50 w-full overflow-visible bg-transparent py-8">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <nav className="relative z-50 flex justify-between">
+        <nav className="relative z-0 flex justify-between">
           <div className="flex items-center md:gap-x-12">
             <Link href="#" aria-label="Home">
               <Logo className="h-10 w-auto" />
@@ -138,9 +138,7 @@ export function Header() {
               <NavLink href="/login">Sign in</NavLink>
             </div> */}
             <Button href="/register" color="blue">
-              <span>
-                Get started <span className="hidden lg:inline">today</span>
-              </span>
+              <span>Start your career</span>
             </Button>
             <div className="-mr-1 md:hidden">
               <MobileNavigation />

@@ -26,7 +26,13 @@ export function TextField({
   return (
     <div className={className}>
       {label && <Label id={id}>{label}</Label>}
-      <input id={id} type={type} {...props} className={formClasses} />
+      <input
+        id={id}
+        type={type}
+        name={props.name}
+        {...props}
+        className={formClasses}
+      />
     </div>
   )
 }

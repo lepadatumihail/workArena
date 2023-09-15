@@ -1,28 +1,33 @@
 import {
+  ArrowPathRoundedSquareIcon,
   CloudArrowUpIcon,
+  HomeIcon,
   LockClosedIcon,
+  PresentationChartBarIcon,
   ServerIcon,
 } from '@heroicons/react/20/solid'
 import { Container } from './Container'
 
 const features = [
   {
-    name: 'Push to limits.',
+    name: 'Assistance',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: CloudArrowUpIcon,
+      'Our dedicated team will lead you through every step of the process, ensuring a seamless experience.',
+
+    icon: PresentationChartBarIcon,
   },
   {
-    name: 'Job certificates.',
+    name: 'Comfortable Living Quarters',
     description:
-      'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-    icon: LockClosedIcon,
+      'Discover our selection of beautifully appointed living spaces conveniently located near your workplace.',
+
+    icon: HomeIcon,
   },
   {
-    name: 'Data backups.',
+    name: 'Efficient Transportation',
     description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ServerIcon,
+      'Enjoy hassle-free commuting with our reliable transport services, designed to make your daily journey a breeze.',
+    icon: ArrowPathRoundedSquareIcon,
   },
 ]
 
@@ -38,12 +43,12 @@ export default function SectionList() {
                   Apply faster
                 </h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  A better workflow
+                  Full process guidance
                 </p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Maiores impedit perferendis suscipit eaque, iste dolor
-                  cupiditate blanditiis ratione.
+                  We will guide you through the entire process. We also have
+                  many nice living quarters close to your work and also provide
+                  transport.
                 </p>
                 <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                   {features.map((feature) => (
@@ -53,7 +58,7 @@ export default function SectionList() {
                           className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
                           aria-hidden="true"
                         />
-                        {feature.name}
+                        <p>{feature.name}</p>
                       </dt>{' '}
                       <dd className="inline">{feature.description}</dd>
                     </div>

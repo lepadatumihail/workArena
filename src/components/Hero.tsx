@@ -15,7 +15,16 @@ export function Hero() {
       aria-labelledby="faq-title"
       className="relative  overflow-x-hidden bg-slate-50"
     >
-      <div className="relative pb-16 pt-20 text-center lg:pt-32">
+      <Image
+        className="absolute left-1/2 top-0  max-w-none -translate-y-1/3 translate-x-[-30%] overflow-visible opacity-80 "
+        src={backgroundImage}
+        alt="bg"
+        width={1558}
+        height={946}
+        unoptimized
+      />
+
+      <div className="relative pb-16 pt-24 text-center lg:pt-52">
         <motion.h1
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -38,17 +47,18 @@ export function Hero() {
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 0.5, scale: 1 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-900"
+          className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-500"
         >
-          Embark on a global career journey with us, where you can explore a
-          wide array of job opportunities, including roles in logistics and
-          various other industries, all powered by our versatile and ambitious
-          foreign workforce.
+          Begin your global career journey with us. Uncover a range of job
+          opportunities with hourly rates from{' '}
+          <span className="text-xl text-blue-600">€13.50</span> to{' '}
+          <span className="text-xl text-blue-600">€25</span>, tailored to your
+          position and experience.
         </motion.p>
         <div className="mt-10 flex justify-center gap-x-6">
-          <Button href="/register">Apply for job offers</Button>
+          <Button href="/register">Start your career</Button>
           <Button
             href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
             variant="outline"

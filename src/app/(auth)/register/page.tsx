@@ -31,8 +31,10 @@ export default function Register() {
         </Link>{' '}
         to your account.
       </p> */}
+
       <form
-        action="#"
+        action="https://getform.io/f/606a2996-49cd-456e-9315-cecf391726ad"
+        method="POST"
         className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2"
       >
         <TextField
@@ -57,7 +59,7 @@ export default function Register() {
           autoComplete="email"
           required
         />
-       
+
         <SelectField
           className="col-span-full"
           label="How did you hear about us?"
