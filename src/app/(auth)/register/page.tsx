@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 import { Button } from '@/components/Button'
-import { SelectField, TextField } from '@/components/Fields'
+import { Label, SelectField, TextField } from '@/components/Fields'
 import { Logo } from '@/components/Logo'
 import { SlimLayout } from '@/components/SlimLayout'
 import { type Metadata } from 'next'
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
 export default function Register() {
   return (
     <SlimLayout>
-      <div className="flex">
+      <div className="flex flex-row items-center gap-4">
         <Link href="/" aria-label="Home">
           <Logo className="h-10 w-auto" />
         </Link>
+        <h2 className="text-xl font-semibold  text-gray-500">
+          Apply for a job with Work Arena
+        </h2>
       </div>
-      <h2 className="mt-20 text-lg font-semibold text-gray-900">
-        Apply for a job with Work Arena
-      </h2>
       {/* <p className="mt-2 text-sm text-gray-700">
         Already registered?{' '}
         <Link
@@ -37,50 +37,74 @@ export default function Register() {
       <form
         action="https://getform.io/f/606a2996-49cd-456e-9315-cecf391726ad"
         method="POST"
-        className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2"
+        className="mt-10 grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2"
       >
         <TextField
           label="First name"
           name="first_name"
           type="text"
           autoComplete="given-name"
+          placeholder="Jon"
           required
         />
         <TextField
           label="Last name"
           name="last_name"
+          placeholder="Doe"
           type="text"
           autoComplete="family-name"
           required
         />
+
         <TextField
           className="col-span-full"
           label="Email address"
           name="email"
+          placeholder="info@workarena.nl"
           type="email"
           autoComplete="email"
           required
         />
-
-        <input
-          id={useId()}
-          type="datetime-local"
-          className="col-span-full   block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-blue-500 sm:text-sm
-          "
-          name="date_time"
-          aria-label="date-time"
+        <TextField
+          className="col-span-full"
+          label="Phone number"
+          name="phone"
+          type="tel"
+          placeholder="+31 323 323 11"
+          autoComplete="tel"
+          required
         />
+
+        <div className="col-span-full">
+          <Label id={useId()}>When should we contact you?</Label>
+          <input
+            id={useId()}
+            type="datetime-local"
+            autoComplete="bday"
+            className="block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-blue-500 sm:text-sm
+          "
+            name="appointment_date"
+            aria-label="date-time"
+          />
+        </div>
 
         <SelectField
           className="col-span-full"
-          label="How did you hear about us?"
-          name="referral_source"
+          label="What job would you prefer?"
+          name="job_preference"
         >
-          <option>AltaVista search</option>
-          <option>Super Bowl commercial</option>
-          <option>Our route 34 city bus ad</option>
-          <option>The “Never Use This” podcast</option>
+          <option>Barista</option>
+          <option>Construction</option>
+          <option>Logistics</option>
+          <option>Any</option>
         </SelectField>
+        <TextField
+          className="col-span-full"
+          label="Every person is unique and we wil give you the best options possible. Please list any preferences below (optional)"
+          name="extra"
+          type="text"
+          placeholder="Part-time only because..."
+        />
         <div className="col-span-full">
           <Button type="submit" variant="solid" color="blue" className="w-full">
             <span>
