@@ -59,6 +59,20 @@ export default function Register() {
           autoComplete="email"
           required
         />
+        <TextField
+          className="col-span-full"
+          label="Email address"
+          name="email"
+          type="email"
+          autoComplete="email"
+          required
+        />
+        <input
+          type="datetime-local"
+          className="col-span-full"
+          name="date"
+          aria-label="date-time"
+        />
 
         <SelectField
           className="col-span-full"
