@@ -5,9 +5,11 @@ import { SelectField, TextField } from '@/components/Fields'
 import { Logo } from '@/components/Logo'
 import { SlimLayout } from '@/components/SlimLayout'
 import { type Metadata } from 'next'
+import { useId } from 'react'
 
 export const metadata: Metadata = {
-  title: 'Sign Up',
+  title: 'Start your carreer with Work Arena.',
+  description: 'Apply for your dream job today!',
 }
 
 export default function Register() {
@@ -59,18 +61,13 @@ export default function Register() {
           autoComplete="email"
           required
         />
-        <TextField
-          className="col-span-full"
-          label="Email address"
-          name="email"
-          type="email"
-          autoComplete="email"
-          required
-        />
+
         <input
+          id={useId()}
           type="datetime-local"
-          className="col-span-full"
-          name="date"
+          className="col-span-full   block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-blue-500 sm:text-sm
+          "
+          name="date_time"
           aria-label="date-time"
         />
 
