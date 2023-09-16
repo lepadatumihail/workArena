@@ -24,7 +24,7 @@ export function Hero() {
         unoptimized
       />
 
-      <div className="relative pb-16 pt-24 text-center lg:pt-52">
+      <div className="relative pb-16 pt-36 text-center lg:pt-52">
         <motion.h1
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -49,7 +49,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-500"
+          className="mx-auto mt-6 max-w-md text-lg tracking-tight text-slate-500 md:max-w-2xl"
         >
           Begin your global career journey with us. Uncover a range of job
           opportunities with hourly rates from{' '}

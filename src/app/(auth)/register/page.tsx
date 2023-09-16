@@ -19,7 +19,7 @@ export default function Register() {
         <Link href="/" aria-label="Home">
           <Logo className="h-10 w-auto" />
         </Link>
-        <h2 className="text-xl font-semibold  text-gray-500">
+        <h2 className=" text-lg font-semibold text-gray-800  md:text-xl">
           Apply for a job with Work Arena
         </h2>
       </div>
@@ -37,7 +37,7 @@ export default function Register() {
       <form
         action="https://getform.io/f/606a2996-49cd-456e-9315-cecf391726ad"
         method="POST"
-        className="mt-10 grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2"
+        className="mt-10 grid h-full grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2"
       >
         <TextField
           label="First name"
@@ -76,12 +76,14 @@ export default function Register() {
         />
 
         <div className="col-span-full">
-          <Label id={useId()}>When should we contact you?</Label>
+          <Label id={useId()}>
+            Choose a date and time when we should contact you back
+          </Label>
           <input
             id={useId()}
             type="datetime-local"
             autoComplete="bday"
-            className="block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-blue-500 sm:text-sm
+            className="block w-full appearance-none rounded-md border border-gray-300 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-blue-500 sm:text-sm
           "
             name="appointment_date"
             aria-label="date-time"
@@ -105,7 +107,7 @@ export default function Register() {
           type="text"
           placeholder="Part-time only because..."
         />
-        <div className="col-span-full">
+        <div className="col-span-full self-end pb-6">
           <Button type="submit" variant="solid" color="blue" className="w-full">
             <span>
               Sign up <span aria-hidden="true">&rarr;</span>
