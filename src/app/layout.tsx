@@ -7,7 +7,7 @@ import { type Metadata } from 'next'
 export const metadata: Metadata = {
   title: {
     template: '%s - Work Arena',
-    default: 'Work Arena - Jof offers made simple for everybody',
+    default: 'Work Arena - Job offers made simple for everybody',
   },
   description:
     'Find a perfect job in an always thriving industry withing the Dutch companies.',
