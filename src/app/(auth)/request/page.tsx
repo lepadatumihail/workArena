@@ -18,7 +18,7 @@ export default function Login() {
           <Logo className="h-10 w-auto" />
         </Link>
       </div>
-      <h2 className="mt-20 text-3xl font-semibold text-gray-900">
+      <h2 className="mt-10 text-3xl font-semibold text-gray-900 sm:mt-14">
         Employee Request Form
       </h2>
       <p className="text-md mt-2 text-gray-700">
