@@ -19,16 +19,16 @@ import construction2 from '@/images/primary/construction2.webp'
 
 const features = [
   {
-    title: 'Inventory Management',
-    description:
-      'Efficiently monitor and control your warehouse stock, ensuring items are readily available when needed.',
-    image: warehouse,
-  },
-  {
     title: 'Construction Project Management',
     description:
       'Streamline project workflows, from planning to execution, with our tailored construction management solutions.',
     image: construction,
+  },
+  {
+    title: 'Inventory Management',
+    description:
+      'Efficiently monitor and control your warehouse stock, ensuring items are readily available when needed.',
+    image: warehouse,
   },
   {
     title: 'Logistics Optimization',
@@ -68,16 +68,16 @@ export function PrimaryFeatures() {
     <section
       id="features"
       aria-label="Features for running your books"
-      className="relative overflow-hidden  pb-28 pt-20 sm:py-20"
+      className="relative overflow-hidden bg-slate-700  pb-28 pt-20 sm:py-20"
     >
-      <Image
+      {/* <Image
         className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%] "
         src={backgroundImage}
         alt=""
         width={2245}
         height={1636}
         unoptimized
-      />
+      /> */}
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-5xl">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
@@ -91,7 +91,7 @@ export function PrimaryFeatures() {
         </div>
         <Tab.Group
           as="div"
-          className="mt-16 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0"
+          className="mt-12 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6  lg:grid-cols-12 lg:pt-0"
           vertical={tabOrientation === 'vertical'}
         >
           {({ selectedIndex }) => (
@@ -154,7 +154,7 @@ export function PrimaryFeatures() {
                       </div>
                       <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
                         <Image
-                          className="max-h-[700px] w-full"
+                          className="max-h-[600px] w-full object-cover"
                           src={feature.image}
                           alt=""
                           priority

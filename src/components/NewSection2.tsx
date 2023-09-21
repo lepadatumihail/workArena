@@ -66,11 +66,11 @@ export default function SectionList() {
                 </dl>
               </div>
             </div>
-            <div className="flex items-start justify-end lg:order-first">
+            <div className="flex items-start justify-start md:justify-end lg:order-first">
               <img
                 src="https://images.unsplash.com/photo-1635350736475-c8cef4b21906?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
                 alt="Product screenshot"
-                className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+                className="w-[48rem] max-w-none rounded-xl object-cover shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
                 width={2432}
                 height={1442}
               />

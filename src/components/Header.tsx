@@ -87,7 +87,7 @@ function MobileNavigation() {
           >
             <MobileNavLink href="#features">Features</MobileNavLink>
             <MobileNavLink href="#testimonials">Testimonials</MobileNavLink>
-            <MobileNavLink href="#pricing">Pricing</MobileNavLink>
+            <MobileNavLink href="#certifications">Certifications</MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
             {/* <MobileNavLink href="/login">Sign in</MobileNavLink> */}
           </Popover.Panel>
@@ -99,7 +99,7 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="absolute z-50 w-full overflow-visible bg-transparent py-8">
+    <header className="fixed z-50 w-full overflow-visible bg-slate-50 py-4 ">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <nav className="relative z-0 flex justify-between">
           <div className="flex items-center md:gap-x-12">
@@ -121,9 +121,9 @@ export function Header() {
               </a>
               <a
                 className="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900"
-                href="#pricing"
+                href="#certifications"
               >
-                Pricing
+                Certifications
               </a>
               <a
                 className="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900"

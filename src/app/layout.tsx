@@ -6,6 +6,7 @@ import '@/styles/tailwind.css'
 import { type Metadata } from 'next'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://workarena.nl'),
   title: {
     template: '%s - Work Arena',
     default: 'Work Arena - Job offers made simple for everybody',

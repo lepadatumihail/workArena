@@ -52,14 +52,12 @@ function CheckIcon({
 
 function Plan({
   name,
-  price,
   description,
   href,
   features,
   featured = false,
 }: {
   name: string
-  price: string
   description: string
   href: string
   features: Array<string>
@@ -69,20 +67,11 @@ function Plan({
     <section
       className={clsx(
         'flex flex-col rounded-3xl px-6 sm:px-8',
-        featured ? 'order-first bg-blue-600 py-8 lg:order-none' : 'lg:py-8',
+        featured ? 'order-first bg-blue-700 py-8 lg:order-none' : 'lg:py-8',
       )}
     >
-      <h3 className="mt-5 font-display text-lg text-white">{name}</h3>
-      <p
-        className={clsx(
-          'mt-2 text-base',
-          featured ? 'text-white' : 'text-slate-400',
-        )}
-      >
-        {description}
-      </p>
-      <p className="order-first font-display text-5xl font-light tracking-tight text-white">
-        {price}
+      <p className="order-first font-display text-3xl font-light tracking-tight text-white">
+        {name}
       </p>
       <ul
         role="list"
@@ -98,7 +87,7 @@ function Plan({
           </li>
         ))}
       </ul>
-      <Button
+      {/* <Button
         href={href}
         variant={featured ? 'solid' : 'outline'}
         color="white"
@@ -106,15 +95,15 @@ function Plan({
         aria-label={`Get started with the ${name} plan for ${price}`}
       >
         Get started
-      </Button>
+      </Button> */}
     </section>
   )
 }
 
-export function Pricing() {
+export function Certifications() {
   return (
     <section
-      id="pricing"
+      id="certifications"
       aria-label="Pricing"
       className="bg-slate-900 py-20 sm:py-32"
     >
@@ -123,55 +112,40 @@ export function Pricing() {
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
             <span className="relative whitespace-nowrap">
               <SwirlyDoodle className="absolute left-0 top-1/2 h-[1em] w-full fill-blue-400" />
-              <span className="relative">Simple pricing,</span>
+              <span className="relative">Work Arena's </span>
             </span>{' '}
-            for everyone.
+            Certifications
           </h2>
           <p className="mt-4 text-lg text-slate-400">
             We help bussinesses to fulfill their missing jobs.
           </p>
         </div>
-        <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
+        <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-2 xl:mx-0 xl:gap-x-8">
           <Plan
-            name="Starter"
-            price="$9"
+            name="Dutch association of temporary employment agencies"
             description="Good for anyone who is self-employed and just getting started."
             href="/register"
             features={[
-              'Send 10 quotes and invoices',
-              'Connect up to 2 bank accounts',
-              'Track up to 15 expenses per month',
-              'Manual payroll support',
-              'Export up to 3 reports',
+              'Work Arena is a member of Algemene Bond Uitzendondernemingen (ABU), which represents the interests of temporary employment agencies in the Netherlands. Moreover, PRO HRM holds NEN-4400-1 certification, a national standard that sets requirements for Dutch payroll companies to ensure compliance with tax and social premium payments, and authorization to work in the Netherlands. This standard helps to minimize the risk of fines from the Tax Office and other government agencies for clients. ',
+
+              'Work Arena also holds the SNA hallmark, indicating that it meets the requirements of the SNA scheme. The SNA standard is designed for Dutch and foreign companies in the Netherlands that provide labor and/or hire work. This hallmark helps to limit the risks of hirers of labor and principals of work.',
+
+              'In addition, Work Arena has been awarded the SNA Quality mark and VRO Certificate. The VRO audits Work Arena twice a year based on the standards of NEN-4400-01, which sets strict quality requirements that a company must meet to protect its clients from fines or additional levies under the Dutch Chain Liability Act.',
+
+              'Work Arena is an Approved Referent Labor Regular and Highly Skilled Migrants, a recognized partner for the IND. Listed in the Public Register of Recognized Referees, this status helps to place highly skilled migrants more quickly.',
             ]}
           />
           <Plan
             featured
-            name="Small business"
-            price="$15"
+            name="Safety and Health Checklist for Temporary Employment Organizations"
             description="Perfect for small / medium sized businesses."
             href="/register"
             features={[
-              'Send 25 quotes and invoices',
-              'Connect up to 5 bank accounts',
-              'Track up to 50 expenses per month',
-              'Automated payroll support',
-              'Export up to 12 reports',
-              'Bulk reconcile transactions',
-              'Track in multiple currencies',
-            ]}
-          />
-          <Plan
-            name="Enterprise"
-            price="$39"
-            description="For even the biggest enterprise companies."
-            href="/register"
-            features={[
-              'Send unlimited quotes and invoices',
-              'Connect up to 15 bank accounts',
-              'Track up to 200 expenses per month',
-              'Automated payroll support',
-              'Export up to 25 reports, including TPS',
+              ' We at Work Arena are proud to hold the VCU certification, which stands for Safety and Health Checklist for Temporary Employment Organizations. It signifies our commitment to providing a safe and healthy working environment for our employees and clients. We work together with them to create a better safety culture.',
+
+              'Our back office staff at Work Arena are all RSa or RPP certified by the NIRPA foundation. This means they are listed in the Register of Payroll Administrators or Register Payroll Professional and have the necessary diplomas. They also earn Continuing Education (PE) points annually to stay up to date with the skills and knowledge required to keep payroll administration running smoothly. All NIRPA registered professionals adhere to the Code of Conduct and Professionalism, which is the industry standard.',
+
+              'To ensure the remittance of payroll tax and social premiums, we use a G-account. A G-account is a blocked account that gives you, the client, the assurance that you are indemnified from your liability for payment of wage tax and social premiums.',
             ]}
           />
         </div>

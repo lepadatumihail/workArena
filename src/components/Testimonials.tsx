@@ -108,7 +108,7 @@ export function Testimonials() {
                     <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
                       <QuoteIcon className="absolute left-6 top-6 fill-slate-100" />
                       <blockquote className="relative">
-                        <p className="text-lg tracking-tight text-slate-900">
+                        <p className="text-md  text-slate-700">
                           {testimonial.content}
                         </p>
                       </blockquote>
@@ -123,11 +123,11 @@ export function Testimonials() {
                         </div>
                         <div className="overflow-hidden rounded-full bg-slate-50">
                           <Image
-                            className="h-14 w-14 object-cover"
+                            className="h-10 w-10 object-cover"
                             src={testimonial.author.image}
                             alt=""
-                            width={56}
-                            height={56}
+                            width={46}
+                            height={46}
                           />
                         </div>
                       </figcaption>

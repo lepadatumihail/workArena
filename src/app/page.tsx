@@ -5,7 +5,7 @@ import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import Example from '@/components/NewSection'
 import SectionList from '@/components/NewSection2'
-import { Pricing } from '@/components/Pricing'
+import { Certifications } from '@/components/Certifications'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { Testimonials } from '@/components/Testimonials'
@@ -22,7 +22,7 @@ export default function Home() {
         <CallToAction />
         <Example />
         <Testimonials />
-        <Pricing />
+        <Certifications />
         <Faqs />
       </main>
       <Footer />

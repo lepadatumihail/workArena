@@ -6,11 +6,9 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import screenshotContacts from '@/images/screenshots/contacts.png'
-import screenshotInventory from '@/images/screenshots/inventory.png'
-import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 import team1 from '@/images/screenshots/team1.png'
 import team2 from '@/images/screenshots/team2.jpg'
+import team3 from '@/images/screenshots/team3.jpg'
 
 interface Feature {
   name: React.ReactNode
@@ -90,7 +88,7 @@ const features: Array<Feature> = [
       'Excel in your career and enjoy a comfortable lifestyle in the Netherlands',
     description:
       'We focus on matching professionals with roles that not only provide substantial compensation but also contribute to a high quality of life in the Netherlands.',
-    image: screenshotContacts,
+    image: team3,
     icon: function ContactsIcon() {
       return (
         <>
