@@ -16,7 +16,7 @@ export default function Example() {
                 <polygon points="0,0 90,0 50,100 0,100" />
               </svg>
 
-              <div className="relative px-6 py-32 lg:px-8  lg:pr-0">
+              <div className="relative px-6 py-20 md:py-32 lg:px-8  lg:pr-0">
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                   <div className="hidden sm:mb-10 sm:flex">
                     <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
