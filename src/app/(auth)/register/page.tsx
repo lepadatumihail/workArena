@@ -23,6 +23,10 @@ export default function Register() {
           Apply for a job with Work Arena
         </h2>
       </div>
+      <p className="text-md mt-6 text-gray-600">
+        Tell us your requirements, and let us find the perfect fit for your
+        skills and talent.
+      </p>
       {/* <p className="mt-2 text-sm text-gray-700">
         Already registered?{' '}
         <Link
@@ -37,7 +41,7 @@ export default function Register() {
       <form
         action="https://getform.io/f/606a2996-49cd-456e-9315-cecf391726ad"
         method="POST"
-        className="mt-10 grid h-full grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2"
+        className="mt-10 grid h-full grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-2"
       >
         <TextField
           label="First name"
