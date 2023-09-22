@@ -147,7 +147,7 @@ export function PrimaryFeatures() {
                           {feature.description}
                         </p>
                       </div>
-                      <div className="relative z-50 mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                      <div className="relative z-50 mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
                         <Image
                           className="max-h-[600px] w-[28rem] object-cover sm:w-full"
                           src={feature.image}
