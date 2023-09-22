@@ -64,11 +64,11 @@ export function Hero() {
               size={22}
               className="transition-all group-hover:text-blue-400"
             />
-            <span className="mx-2">Start your career </span>
+            <span className="mx-1 sm:mx-2">Start your career </span>
           </Button>
           <Button href="/request" variant="outline" className="">
             <AddressBook size={22} />
-            <span className="mx-2">I need employees </span>
+            <span className="mx-1 sm:mx-2">I need employees </span>
           </Button>
         </div>
         <div className="mt-36 lg:mt-44">
