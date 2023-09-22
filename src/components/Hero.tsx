@@ -32,7 +32,6 @@ export function Hero() {
           transition={{ duration: 0.5 }}
           className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-800 sm:text-7xl"
         >
-          Join the
           <span className="relative whitespace-nowrap text-blue-600">
             <svg
               aria-hidden="true"
