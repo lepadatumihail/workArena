@@ -1,10 +1,7 @@
 import {
   ArrowPathRoundedSquareIcon,
-  CloudArrowUpIcon,
   HomeIcon,
-  LockClosedIcon,
   PresentationChartBarIcon,
-  ServerIcon,
 } from '@heroicons/react/20/solid'
 import { Container } from './Container'
 
