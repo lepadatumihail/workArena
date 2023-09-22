@@ -25,7 +25,16 @@ export const metadata: Metadata = {
     url: 'https://workarena.nl',
     siteName: 'WorkArena.nl',
     images: [
-      'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80',
+      {
+        url: '/og-smaller.jpg',
+        width: 640,
+        height: 426,
+      },
+      {
+        url: '/og-medium.jpg',
+        width: 1920,
+        height: 1280,
+      },
     ],
     locale: 'en_US',
     type: 'website',
@@ -36,9 +45,7 @@ export const metadata: Metadata = {
     description:
       'Find a perfect job with Work Arena in an always thriving industry withing the Dutch companies.',
     creator: '@workarena.nl',
-    images: [
-      'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80',
-    ],
+    images: ['/og-medium.jpg'],
   },
 }
 
