@@ -7,7 +7,7 @@ import logoTransistor from '@/images/logos/transistor.svg'
 import logoTuple from '@/images/logos/tuple.svg'
 import backgroundImage from '@/images/background-faqs.jpg'
 import { motion } from 'framer-motion'
-import { AddressBook } from '@phosphor-icons/react'
+import { AddressBook, Strategy } from '@phosphor-icons/react'
 
 export function Hero() {
   return (
@@ -59,10 +59,16 @@ export function Hero() {
           position and experience.
         </motion.p>
         <div className="mt-10 flex justify-center gap-x-6">
-          <Button href="/register">Start your career</Button>
-          <Button href="/request" variant="outline">
+          <Button href="/register" className="group">
+            <Strategy
+              size={22}
+              className="transition-all group-hover:text-blue-400"
+            />
+            <span className="mx-2">Start your career </span>
+          </Button>
+          <Button href="/request" variant="outline" className="">
             <AddressBook size={22} />
-            <span className="ml-3">I need employees </span>
+            <span className="mx-2">I need employees </span>
           </Button>
         </div>
         <div className="mt-36 lg:mt-44">

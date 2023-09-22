@@ -111,7 +111,7 @@ export default function Register() {
           type="text"
           placeholder="Part-time only because..."
         />
-        <div className="col-span-full self-end pb-6">
+        <div className="col-span-full self-center pb-6">
           <Button type="submit" variant="solid" color="blue" className="w-full">
             <span>
               Sign up <span aria-hidden="true">&rarr;</span>
