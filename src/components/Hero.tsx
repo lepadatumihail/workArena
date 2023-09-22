@@ -30,7 +30,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-800 sm:text-7xl"
+          className="mx-auto max-w-sm font-display text-5xl font-medium tracking-tight text-slate-800 sm:max-w-7xl sm:text-7xl"
         >
           <span className="relative whitespace-nowrap text-blue-600">
             <svg
@@ -46,20 +46,19 @@ export function Hero() {
               Work Arena <br />
             </span>
           </span>{' '}
-          International <br />
-          Job Offers
+          International Job Offers
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="mx-auto mt-6 max-w-sm text-lg tracking-tight text-slate-500 md:max-w-2xl"
+          className="mx-auto mt-6 max-w-sm text-lg tracking-tight text-slate-500 md:max-w-3xl"
         >
           Begin your global career journey with us. Uncover a range of job
           opportunities with hourly rates from{' '}
-          <span className="text-xl text-blue-600">€13.50</span> to{' '}
-          <span className="text-xl text-blue-600">€25</span>, tailored to your
-          position and experience.
+          <span className="text-xl font-semibold text-blue-600">€13.50</span> to{' '}
+          <span className="text-xl font-semibold text-blue-600">€25</span>,
+          tailored to your position and experience.
         </motion.p>
         <div className="mt-10 flex justify-center gap-x-6">
           <Button href="/register" className="group">
