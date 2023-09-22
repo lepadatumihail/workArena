@@ -66,7 +66,7 @@ function Plan({
     <section
       className={clsx(
         'flex flex-col rounded-3xl px-6 sm:px-8',
-        featured ? 'order-first bg-blue-800 py-8 lg:order-none' : 'lg:py-8',
+        featured ? 'order-first bg-blue-600/50 py-8 lg:order-none' : 'lg:py-8',
       )}
     >
       <p className="order-first font-display text-xl   tracking-tight text-white sm:text-2xl">
@@ -108,12 +108,12 @@ export function Certifications() {
     >
       <Container>
         <div className="md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-5xl">
+          <h2 className="font-display text-4xl tracking-tight text-white sm:text-5xl">
             <span className="relative whitespace-nowrap">
               <SwirlyDoodle className="absolute left-0 top-1/2 h-[1em] w-full fill-blue-400" />
               <span className="relative">Work Arena's </span>
             </span>{' '}
-            Certifications
+            <span className="text-blue-400">Certifications</span>
           </h2>
           <p className="mt-4 text-xl text-slate-400">
             We help bussinesses to fulfill their missing jobs.

@@ -23,7 +23,7 @@ export default function Example() {
                       <p>Easy application</p>
                     </div>
                   </div>
-                  <h1 className="font-display text-3xl font-medium  tracking-tight text-gray-900  sm:text-6xl">
+                  <h1 className="font-display text-3xl font-medium leading-8  tracking-tight text-gray-900  sm:text-6xl">
                     Work Arena guides your journey
                   </h1>
                   <p className="text-md mt-6 leading-8 text-gray-600 sm:text-lg">

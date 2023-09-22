@@ -236,9 +236,9 @@ export function SecondaryFeatures() {
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
+          <h1 className="font-display text-3xl font-medium  tracking-tight text-gray-900  sm:text-6xl">
             Explore Our Exclusive Features
-          </h2>
+          </h1>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
             Discover the Benefits of Choosing Work Arena for Your Career Journey
           </p>
