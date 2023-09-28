@@ -131,14 +131,14 @@ function Feature({
           <feature.icon />
         </svg>
       </div>
-      <h3
+      <p
         className={clsx(
           'mt-6 text-sm font-medium',
           isActive ? 'text-blue-600' : 'text-slate-600',
         )}
       >
         {feature.name}
-      </h3>
+      </p>
       <p className="mt-2 font-display text-xl text-slate-900">
         {feature.summary}
       </p>
