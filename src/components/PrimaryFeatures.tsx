@@ -105,6 +105,7 @@ export function PrimaryFeatures() {
                     >
                       <h3>
                         <Tab
+                          aria-label={feature.title}
                           className={clsx(
                             'font-display text-lg ui-not-focus-visible:outline-none',
                             selectedIndex === featureIndex
