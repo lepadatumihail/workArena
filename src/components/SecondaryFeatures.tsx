@@ -157,7 +157,7 @@ function FeaturesMobile() {
             <div className="absolute -inset-x-4 bottom-0 top-8 shadow-xl sm:-inset-x-6" />
             <div className="relative mx-auto  overflow-hidden rounded-xl bg-white shadow-xl shadow-slate-900/5 ring-1 ring-slate-500/10">
               <Image
-                className="max-h-72  w-[42rem]"
+                className="min-h-72 max-h-80  w-[42rem] sm:w-[55rem]"
                 style={{ objectFit: 'cover' }}
                 src={feature.image}
                 alt=""

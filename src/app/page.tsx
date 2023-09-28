@@ -17,7 +17,7 @@ export default function Home() {
       <main style={{ scrollBehavior: 'smooth' }}>
         <Hero />
         <SectionList />
-        <PrimaryFeatures />
+        {/* <PrimaryFeatures /> */}
         <SecondaryFeatures />
         <CallToAction />
         <Example />
