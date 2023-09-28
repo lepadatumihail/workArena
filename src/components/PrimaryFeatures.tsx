@@ -85,7 +85,6 @@ export function PrimaryFeatures() {
           </p>
         </div>
         <Tab.Group
-          role="tablist"
           as="div"
           className="mt-12 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6  lg:grid-cols-12 lg:pt-0"
           vertical={tabOrientation === 'vertical'}
@@ -133,7 +132,7 @@ export function PrimaryFeatures() {
                   ))}
                 </Tab.List>
               </div>
-              <Tab.Panels role="tabpanel" className="lg:col-span-7">
+              <Tab.Panels aria-label="Tab Panels" className="lg:col-span-7">
                 {features.map((feature) => (
                   <Tab.Panel key={feature.title} unmount={true}>
                     <motion.div
