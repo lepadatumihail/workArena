@@ -17,7 +17,7 @@ export default function Home() {
       <main>
         <Hero />
         <SectionList />
-        {/* <PrimaryFeatures /> */}
+        <PrimaryFeatures />
         <SecondaryFeatures />
         <CallToAction />
         <EasyApplication />
