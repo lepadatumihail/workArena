@@ -15,15 +15,15 @@ export default function Home() {
     <>
       <Header />
       <main>
-        {/* <Hero /> */}
-        {/* <SectionList /> */}
+        <Hero />
+        <SectionList />
         {/* <PrimaryFeatures /> */}
-        {/* <SecondaryFeatures />
+        <SecondaryFeatures />
         <CallToAction />
         <EasyApplication />
         <Testimonials />
         <Certifications />
-        <Faqs /> */}
+        {/* <Faqs /> */}
       </main>
       <Footer />
     </>
