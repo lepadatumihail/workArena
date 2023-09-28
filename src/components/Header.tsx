@@ -54,10 +54,7 @@ function MobileNavIcon({ open }: { open: boolean }) {
 function MobileNavigation() {
   return (
     <Popover>
-      <Popover.Button
-        className="relative z-10 flex h-8 w-8 items-center justify-center ui-not-focus-visible:outline-none"
-        aria-label="Toggle Navigation"
-      >
+      <Popover.Button className="relative z-10 flex h-8 w-8 items-center justify-center ui-not-focus-visible:outline-none">
         {({ open }) => <MobileNavIcon open={open} />}
       </Popover.Button>
       <Transition.Root>

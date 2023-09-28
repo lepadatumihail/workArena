@@ -62,7 +62,6 @@ export function PrimaryFeatures() {
   return (
     <section
       id="features"
-      aria-label="Features for running your books"
       className="relative overflow-hidden bg-slate-700  pb-28 pt-20 sm:py-20"
     >
       {/* <Image
@@ -88,7 +87,6 @@ export function PrimaryFeatures() {
           as="div"
           className="mt-12 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6  lg:grid-cols-12 lg:pt-0"
           vertical={tabOrientation === 'vertical'}
-          aria-label="Features Tabs"
         >
           {({ selectedIndex }) => (
             <>
@@ -106,7 +104,6 @@ export function PrimaryFeatures() {
                     >
                       <h3>
                         <Tab
-                          aria-label={feature.title}
                           className={clsx(
                             'font-display text-lg ui-not-focus-visible:outline-none',
                             selectedIndex === featureIndex
