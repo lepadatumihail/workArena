@@ -79,8 +79,8 @@ function Plan({
           featured ? 'text-white' : 'text-slate-200',
         )}
       >
-        {features.map((feature) => (
-          <li key={feature} className="flex">
+        {features.map((feature, index) => (
+          <li key={feature + index} className="flex">
             <CheckIcon className={featured ? 'text-white' : 'text-slate-400'} />
             <span className="ml-4">{feature}</span>
           </li>

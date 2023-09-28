@@ -13,7 +13,7 @@ export function Hero() {
   return (
     <section
       id="faq"
-      aria-labelledby="faq-title"
+      aria-labelledby="faq"
       className="relative  overflow-x-hidden bg-slate-50"
     >
       <Image
@@ -93,7 +93,7 @@ export function Hero() {
               //   { name: 'Statamic', logo: logoStatamic },
               // ],
             ].map((group, groupIndex) => (
-              <li key={groupIndex}>
+              <li key={groupIndex + group[groupIndex].name}>
                 <ul
                   role="list"
                   className="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0"

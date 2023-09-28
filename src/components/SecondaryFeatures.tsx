@@ -150,8 +150,8 @@ function Feature({
 function FeaturesMobile() {
   return (
     <div className="-mx-4 mt-10 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 lg:hidden">
-      {features.map((feature) => (
-        <div key={feature.summary}>
+      {features.map((feature, index) => (
+        <div key={feature.name + index.toString()}>
           <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
           <div className="relative mt-10 pb-10">
             <div className="absolute -inset-x-4 bottom-0 top-8 shadow-xl sm:-inset-x-6" />
@@ -179,7 +179,7 @@ function FeaturesDesktop() {
           <Tab.List className="grid grid-cols-3 gap-x-8">
             {features.map((feature, featureIndex) => (
               <Feature
-                key={feature.summary}
+                key={feature.summary + featureIndex}
                 feature={{
                   ...feature,
                   name: (
@@ -199,7 +199,7 @@ function FeaturesDesktop() {
               {features.map((feature, featureIndex) => (
                 <Tab.Panel
                   static
-                  key={feature.summary}
+                  key={feature.name + featureIndex.toString()}
                   className={clsx(
                     'px-5 transition duration-500 ease-in-out ui-not-focus-visible:outline-none',
                     featureIndex !== selectedIndex && 'opacity-60',

@@ -88,10 +88,10 @@ export function Faqs() {
           className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3"
         >
           {faqs.map((column, columnIndex) => (
-            <li key={columnIndex}>
+            <li key={columnIndex + column[columnIndex].question}>
               <ul role="list" className="flex flex-col gap-y-8">
                 {column.map((faq, faqIndex) => (
-                  <li key={faqIndex}>
+                  <li key={faq.question + faqIndex}>
                     <h3 className="font-display text-lg leading-7 text-slate-900">
                       {faq.question}
                     </h3>

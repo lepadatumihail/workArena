@@ -96,7 +96,7 @@ export function PrimaryFeatures() {
                 <Tab.List className="relative z-10 flex gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
                   {features.map((feature, featureIndex) => (
                     <div
-                      key={feature.title}
+                      key={feature.title + featureIndex}
                       className={clsx(
                         'group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-6',
                         selectedIndex === featureIndex
@@ -133,15 +133,14 @@ export function PrimaryFeatures() {
                 </Tab.List>
               </div>
               <Tab.Panels aria-label="Tab Panels" className="lg:col-span-7">
-                {features.map((feature) => (
-                  <Tab.Panel key={feature.title} unmount={true}>
+                {features.map((feature, index) => (
+                  <Tab.Panel key={feature.title + index} unmount={true}>
                     <motion.div
                       initial={{ opacity: 0, y: 20 }} // Initial animation values
                       animate={{ opacity: 1, y: 0 }} // Animation values when tab is selected
                       exit={{ opacity: 0, y: -20 }} // Animation values when tab is deselected
                       transition={{ duration: 0.5 }} // Animation duration
                       className="mt-2" // Adjust this spacing as needed
-                      key={feature.title}
                     >
                       <div className="relative sm:px-6 lg:hidden">
                         <div className="absolute -inset-x-4 bottom-[-4.25rem] top-[-6.5rem] bg-white/10 ring-1 ring-inset ring-white/10 sm:inset-x-0 sm:rounded-t-xl" />

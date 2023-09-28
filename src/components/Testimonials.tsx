@@ -101,10 +101,10 @@ export function Testimonials() {
           className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3"
         >
           {testimonials.map((column, columnIndex) => (
-            <li key={columnIndex}>
+            <li key={columnIndex.toString() + column[columnIndex].author}>
               <ul role="list" className="flex flex-col gap-y-6 sm:gap-y-8">
                 {column.map((testimonial, testimonialIndex) => (
-                  <li key={testimonialIndex}>
+                  <li key={testimonialIndex + testimonial.content}>
                     <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
                       <QuoteIcon className="absolute left-6 top-6 fill-slate-100" />
                       <blockquote className="relative">
