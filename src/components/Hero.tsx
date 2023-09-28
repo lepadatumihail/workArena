@@ -12,8 +12,8 @@ import { AddressBook, Strategy } from '@phosphor-icons/react'
 export function Hero() {
   return (
     <section
-      id="faq"
-      aria-labelledby="faq"
+      id="heroSection"
+      aria-labelledby="heroSection"
       className="relative  overflow-x-hidden bg-slate-50"
     >
       <Image
