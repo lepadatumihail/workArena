@@ -3,7 +3,7 @@ import { Faqs } from '@/components/Faqs'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
-import Example from '@/components/NewSection'
+import EasyApplication from '@/components/NewSection'
 import SectionList from '@/components/NewSection2'
 import { Certifications } from '@/components/Certifications'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
@@ -14,13 +14,13 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main style={{ scrollBehavior: 'smooth' }}>
+      <main>
         <Hero />
         <SectionList />
         {/* <PrimaryFeatures /> */}
         {/* <SecondaryFeatures /> */}
         <CallToAction />
-        <Example />
+        <EasyApplication />
         <Testimonials />
         <Certifications />
         <Faqs />

@@ -1,6 +1,6 @@
 import { Container } from './Container'
 
-export default function Example() {
+export default function EasyApplication() {
   return (
     <Container className="mx-0 max-w-none" style={{ padding: 0 }}>
       <div className="bg-white ">
