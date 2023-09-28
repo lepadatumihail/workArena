@@ -17,7 +17,7 @@ export function Hero() {
       className="relative  overflow-x-hidden bg-slate-50"
     >
       <Image
-        className="absolute left-1/2 top-0  max-w-none -translate-y-1/3 translate-x-[-30%] overflow-visible opacity-80 "
+        className="absolute left-1/2 top-0  max-w-none -translate-y-1/3 translate-x-[-30%] opacity-80 "
         src={backgroundImage}
         alt="bg"
         width={1558}
