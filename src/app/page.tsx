@@ -23,7 +23,7 @@ export default function Home() {
         <EasyApplication />
         <Testimonials />
         <Certifications />
-        {/* <Faqs /> */}
+        <Faqs />
       </main>
       <Footer />
     </>
