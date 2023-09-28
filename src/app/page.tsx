@@ -18,7 +18,7 @@ export default function Home() {
         <Hero />
         <SectionList />
         {/* <PrimaryFeatures /> */}
-        <SecondaryFeatures />
+        {/* <SecondaryFeatures /> */}
         <CallToAction />
         <Example />
         <Testimonials />
