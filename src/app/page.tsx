@@ -16,10 +16,10 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <SectionList />
-        <PrimaryFeatures />
         <SecondaryFeatures />
         <CallToAction />
+        <SectionList />
+        <PrimaryFeatures />
         <EasyApplication />
         <Testimonials />
         <Certifications />
