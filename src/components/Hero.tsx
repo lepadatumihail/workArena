@@ -2,16 +2,13 @@
 import Image from 'next/image'
 
 import { Button } from '@/components/Button'
-import logoStaticKit from '@/images/logos/statickit.svg'
-import logoTransistor from '@/images/logos/transistor.svg'
-import logoTuple from '@/images/logos/tuple.svg'
 import backgroundImage from '@/images/background-faqs.jpg'
 import { motion } from 'framer-motion'
 import { AddressBook, Strategy } from '@phosphor-icons/react'
 
 export function Hero() {
   return (
-    <section className="relative  overflow-x-hidden bg-slate-50">
+    <section className="relative  h-[100vh] overflow-x-hidden bg-slate-50">
       <Image
         className="absolute left-1/2 top-0  max-w-none -translate-y-1/3 translate-x-[-30%] opacity-80 "
         src={backgroundImage}
@@ -21,7 +18,7 @@ export function Hero() {
         unoptimized
       />
 
-      <div className="relative pb-16 pt-36 text-center lg:pt-52">
+      <div className="relative pb-16 pt-64 text-center lg:pt-72">
         <motion.h1
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -68,45 +65,6 @@ export function Hero() {
             <AddressBook size={22} />
             <span className="mx-1 sm:mx-2">I need employees </span>
           </Button>
-        </div>
-        <div className="mt-36 lg:mt-44">
-          <p className="font-display text-base text-slate-900">
-            Trusted by these companies
-          </p>
-          <ul
-            role="list"
-            className="mt-8 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0"
-          >
-            {[
-              [
-                { name: 'Transistor', logo: logoTransistor },
-                { name: 'Tuple', logo: logoTuple },
-                { name: 'StaticKit', logo: logoStaticKit },
-              ],
-              // [
-              //   { name: 'Mirage', logo: logoMirage },
-              //   { name: 'Laravel', logo: logoLaravel },
-              //   { name: 'Statamic', logo: logoStatamic },
-              // ],
-            ].map((group, groupIndex) => (
-              <li key={groupIndex + group[groupIndex].name}>
-                <ul
-                  role="list"
-                  className="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0"
-                >
-                  {group.map((company) => (
-                    <li key={company.name} className="flex">
-                      <Image
-                        src={company.logo}
-                        alt={company.name}
-                        unoptimized
-                      />
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </section>
