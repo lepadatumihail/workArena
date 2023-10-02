@@ -10,20 +10,20 @@ export function Hero() {
   return (
     <section className="relative  h-[100vh] overflow-x-hidden bg-slate-50">
       <Image
-        className="absolute left-1/2 top-0  max-w-none -translate-y-1/3 translate-x-[-30%] opacity-80 "
+        className=" absolute left-1/2 top-0 max-w-none -translate-y-20 translate-x-[-40%] opacity-50 "
         src={backgroundImage}
-        alt="bg"
+        alt="background"
         width={1558}
         height={946}
         unoptimized
       />
 
-      <div className="relative pb-16 pt-64 text-center lg:pt-72">
+      <div className="relative pb-16 pt-72 text-center lg:pt-72">
         <motion.h1
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="mx-auto max-w-sm font-display text-5xl font-medium tracking-tight text-slate-800 sm:max-w-7xl sm:text-7xl"
+          className="trans mx-auto max-w-sm font-display text-5xl font-medium tracking-tight text-slate-800 sm:max-w-7xl sm:text-7xl"
         >
           <span className="relative whitespace-nowrap text-blue-600">
             <svg
