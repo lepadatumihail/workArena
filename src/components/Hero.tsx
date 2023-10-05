@@ -8,7 +8,7 @@ import { AddressBook, Strategy } from '@phosphor-icons/react'
 
 export function Hero() {
   return (
-    <section className="relative  h-[100vh] overflow-x-hidden bg-slate-50">
+    <section className="relative  h-[100vh] overflow-hidden bg-slate-50">
       <Image
         className=" absolute left-1/2 top-0 max-w-none -translate-y-20 translate-x-[-40%] opacity-50 "
         src={backgroundImage}
@@ -18,7 +18,7 @@ export function Hero() {
         unoptimized
       />
 
-      <div className="relative pb-16 pt-72 text-center lg:pt-72">
+      <div className="relative pb-16 pt-60 text-center lg:pt-72">
         <motion.h1
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}

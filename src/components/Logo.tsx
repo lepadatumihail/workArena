@@ -8,7 +8,7 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g clip-path="url(#clip0_1_2)">
+      <g clipPath="url(#clip0_1_2)">
         <path
           d="M0.559998 96.79C4.25 100.45 8.36 103.65 12.83 106.23C13.93 106.91 15.1 107.45 16.23 108.06C17.4 108.59 18.55 109.17 19.76 109.62C22.13 110.61 24.59 111.37 27.07 112.02C29.55 112.65 32.07 113.11 34.61 113.43C37.15 113.7 39.71 113.86 42.26 113.81C43.53 113.81 44.81 113.63 46.08 113.55C47.35 113.45 48.62 113.38 49.87 113.1C51.12 112.87 52.38 112.67 53.63 112.43L57.31 111.42C62.15 109.89 66.84 107.86 71.1 105.12C75.35 102.37 79.29 99.14 82.69 95.39C86.03 91.59 88.91 87.42 91.24 82.93C93.45 78.39 95.06 73.58 96.08 68.64C96.41 66.14 96.9 63.66 97.01 61.13C97.21 58.61 96.99 56.09 96.88 53.57C96.88 52.3 96.58 51.07 96.43 49.82L96.15 47.95L96.01 47.01L95.78 46.09L94.85 42.42C94.72 41.8 94.49 41.21 94.27 40.62L93.62 38.84C92.87 36.42 91.63 34.21 90.59 31.9L88.65 28.64C88.32 28.1 88.02 27.54 87.66 27.02L86.53 25.49C83.65 21.32 80 17.73 76.1 14.5L73.08 12.18L69.85 10.15C69.31 9.82 68.79 9.45 68.22 9.16L66.51 8.31C65.36 7.77 64.25 7.12 63.07 6.66L59.51 5.28L58.62 4.93C58.32 4.83 58.01 4.76 57.7 4.67L55.86 4.16C53.42 3.37 50.88 3.05 48.36 2.6C47.73 2.46 47.09 2.45 46.45 2.4L44.53 2.26C43.25 2.17 41.97 2.03 40.69 2.05C38.12 2.04 35.55 2.22 33 2.56C27.9 3.27 22.87 4.66 18.09 6.68L17.77 5.99C20.12 4.81 22.56 3.77 25.06 2.92C27.57 2.09 30.14 1.41 32.75 0.940001C35.36 0.460001 38 0.140001 40.66 0.0300012C41.99 -0.0599988 43.32 0.0200012 44.65 0.0500012L46.65 0.100001C47.32 0.130001 47.99 0.100001 48.65 0.230001C51.29 0.600001 53.96 0.850001 56.54 1.58L58.49 2.05C58.81 2.13 59.14 2.2 59.47 2.29L60.42 2.62L64.22 3.94C64.87 4.13 65.46 4.45 66.07 4.73L67.89 5.58L69.71 6.43C70.31 6.72 70.87 7.1 71.46 7.43L74.92 9.49L78.18 11.86C82.42 15.15 86.34 18.94 89.48 23.33L90.7 24.94C91.1 25.48 91.42 26.08 91.79 26.65C92.5 27.8 93.22 28.94 93.91 30.1L95.7 33.74C96.34 34.93 96.79 36.21 97.26 37.48L97.96 39.38C98.19 40.01 98.44 40.64 98.59 41.31L99.61 45.24L99.86 46.22L100.02 47.22L100.33 49.22C100.51 50.56 100.82 51.88 100.83 53.24C100.96 55.94 101.2 58.64 101.01 61.34C100.92 64.05 100.38 66.71 100.01 69.39C98.89 74.69 97.14 79.83 94.75 84.69C92.24 89.48 89.13 93.95 85.49 97.93C81.8 101.88 77.55 105.27 72.99 108.13L69.48 110.13C68.28 110.74 67.03 111.25 65.81 111.81C64.6 112.41 63.32 112.82 62.05 113.26C60.77 113.67 59.53 114.2 58.21 114.47L54.3 115.43C52.98 115.65 51.65 115.83 50.32 116.03C49 116.28 47.66 116.32 46.32 116.39C44.98 116.44 43.65 116.58 42.31 116.55C39.62 116.53 36.97 116.29 34.32 115.93C31.68 115.51 29.06 115 26.51 114.21C16.3 111.13 6.99 105.25 0.0599976 97.31L0.619998 96.79H0.559998Z"
           fill="url(#paint0_linear_1_2)"
@@ -63,19 +63,19 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
           y2="58.28"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7FBFD" />
-          <stop offset="0.02" stop-color="#E1F0F9" />
-          <stop offset="0.06" stop-color="#B8DDF2" />
-          <stop offset="0.1" stop-color="#95CCEC" />
-          <stop offset="0.15" stop-color="#7BC0E7" />
-          <stop offset="0.19" stop-color="#68B7E4" />
-          <stop offset="0.23" stop-color="#5CB1E2" />
-          <stop offset="0.28" stop-color="#59B0E2" />
-          <stop offset="0.35" stop-color="#58A4D4" />
-          <stop offset="0.56" stop-color="#5587B2" />
-          <stop offset="0.67" stop-color="#557CA5" />
-          <stop offset="0.89" stop-color="#3C578C" />
-          <stop offset="1" stop-color="#344255" />
+          <stop stopColor="#F7FBFD" />
+          <stop offset="0.02" stopColor="#E1F0F9" />
+          <stop offset="0.06" stopColor="#B8DDF2" />
+          <stop offset="0.1" stopColor="#95CCEC" />
+          <stop offset="0.15" stopColor="#7BC0E7" />
+          <stop offset="0.19" stopColor="#68B7E4" />
+          <stop offset="0.23" stopColor="#5CB1E2" />
+          <stop offset="0.28" stopColor="#59B0E2" />
+          <stop offset="0.35" stopColor="#58A4D4" />
+          <stop offset="0.56" stopColor="#5587B2" />
+          <stop offset="0.67" stopColor="#557CA5" />
+          <stop offset="0.89" stopColor="#3C578C" />
+          <stop offset="1" stopColor="#344255" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_1_2"
@@ -85,19 +85,19 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
           y2="77.05"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F7FBFD" />
-          <stop offset="0.02" stop-color="#E1F0F9" />
-          <stop offset="0.06" stop-color="#B8DDF2" />
-          <stop offset="0.1" stop-color="#95CCEC" />
-          <stop offset="0.15" stop-color="#7BC0E7" />
-          <stop offset="0.19" stop-color="#68B7E4" />
-          <stop offset="0.23" stop-color="#5CB1E2" />
-          <stop offset="0.28" stop-color="#59B0E2" />
-          <stop offset="0.35" stop-color="#58A4D4" />
-          <stop offset="0.56" stop-color="#5587B2" />
-          <stop offset="0.67" stop-color="#557CA5" />
-          <stop offset="0.89" stop-color="#3C578C" />
-          <stop offset="1" stop-color="#344255" />
+          <stop stopColor="#F7FBFD" />
+          <stop offset="0.02" stopColor="#E1F0F9" />
+          <stop offset="0.06" stopColor="#B8DDF2" />
+          <stop offset="0.1" stopColor="#95CCEC" />
+          <stop offset="0.15" stopColor="#7BC0E7" />
+          <stop offset="0.19" stopColor="#68B7E4" />
+          <stop offset="0.23" stopColor="#5CB1E2" />
+          <stop offset="0.28" stopColor="#59B0E2" />
+          <stop offset="0.35" stopColor="#58A4D4" />
+          <stop offset="0.56" stopColor="#5587B2" />
+          <stop offset="0.67" stopColor="#557CA5" />
+          <stop offset="0.89" stopColor="#3C578C" />
+          <stop offset="1" stopColor="#344255" />
         </linearGradient>
         <clipPath id="clip0_1_2">
           <rect width="124.6" height="116.56" fill="white" />
