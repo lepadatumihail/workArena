@@ -8,7 +8,6 @@ import SectionList from '@/components/NewSection2'
 import { Certifications } from '@/components/Certifications'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
-import { Testimonials } from '@/components/Testimonials'
 
 export default function Home() {
   return (
@@ -21,7 +20,7 @@ export default function Home() {
         <SectionList />
         <PrimaryFeatures />
         <EasyApplication />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Certifications />
         <Faqs />
       </main>

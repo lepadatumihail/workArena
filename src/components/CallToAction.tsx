@@ -3,14 +3,14 @@ import Image from 'next/image'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-call-to-action.jpg'
+import backgroundImage from '@/images/background-CTA.avif'
 import { ArrowArcRight, Plus } from '@phosphor-icons/react'
 
 export function CallToAction() {
   return (
     <section
       id="get-started-today"
-      className="relative overflow-hidden bg-blue-600 py-12 sm:py-16"
+      className="relative overflow-hidden bg-green-600 py-12 sm:py-16"
     >
       <Image
         className="absolute left-1/2 top-1/2 max-w-none -translate-x-1/2 -translate-y-1/2"

@@ -2,7 +2,7 @@ import { Container } from './Container'
 
 export default function EasyApplication() {
   return (
-    <Container className="mx-0 max-w-none" style={{ padding: 0 }}>
+    <Container className="mx-0 max-w-none py-10">
       <div className="bg-white ">
         <div className="relative">
           <div className="mx-auto max-w-6xl">
@@ -19,7 +19,7 @@ export default function EasyApplication() {
               <div className="relative px-6 py-20 md:py-32 lg:px-8  lg:pr-0">
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                   <div className="hidden sm:mb-10 sm:flex">
-                    <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                    <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-orange-500 hover:ring-green-900/20">
                       <p>Easy application</p>
                     </div>
                   </div>
@@ -34,7 +34,7 @@ export default function EasyApplication() {
                   <div className="mt-10 flex items-center gap-x-6">
                     <a
                       href="/register"
-                      className="text-sm font-semibold leading-6 text-gray-900"
+                      className="text-sm font-semibold leading-6 text-orange-600"
                     >
                       Apply now <span aria-hidden="true">→</span>
                     </a>

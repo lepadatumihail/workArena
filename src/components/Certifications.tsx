@@ -66,7 +66,7 @@ function Plan({
     <section
       className={clsx(
         'flex flex-col rounded-3xl px-6 sm:px-8',
-        featured ? 'order-first bg-blue-600/50 py-8 lg:order-none' : 'lg:py-8',
+        featured ? 'order-first bg-green-600/50 py-8 lg:order-none' : 'lg:py-8',
       )}
     >
       <p className="order-first font-display text-xl   tracking-tight text-white sm:text-2xl">
@@ -95,16 +95,16 @@ export function Certifications() {
     <section
       id="certifications"
       aria-label="Pricing"
-      className="bg-slate-900 py-20 sm:py-32"
+      className="mt-10 bg-gray-800 py-20 sm:py-32"
     >
       <Container>
         <div className="md:text-center">
           <h2 className="font-display text-4xl tracking-tight text-white sm:text-5xl">
             <span className="relative whitespace-nowrap">
-              <SwirlyDoodle className="absolute left-0 top-1/2 h-[1em] w-full fill-blue-400" />
+              <SwirlyDoodle className="absolute left-0 top-1/2 h-[1em] w-full fill-green-400" />
               <span className="relative">Work Arena's </span>
             </span>{' '}
-            <span className="text-blue-400">Certifications</span>
+            <span className="text-green-400">Certifications</span>
           </h2>
           <p className="mt-4 text-xl text-slate-400">
             We help bussinesses to fulfill their missing jobs.
@@ -136,6 +136,8 @@ export function Certifications() {
               'Our back office staff at Work Arena are all RSa or RPP certified by the NIRPA foundation. This means they are listed in the Register of Payroll Administrators or Register Payroll Professional and have the necessary diplomas. They also earn Continuing Education (PE) points annually to stay up to date with the skills and knowledge required to keep payroll administration running smoothly. All NIRPA registered professionals adhere to the Code of Conduct and Professionalism, which is the industry standard.',
 
               'To ensure the remittance of payroll tax and social premiums, we use a G-account. A G-account is a blocked account that gives you, the client, the assurance that you are indemnified from your liability for payment of wage tax and social premiums.',
+
+              ' By integrating these practices, we aim to set a benchmark in the industry for responsible and ethical temporary employment practices, safeguarding the interests of both our clients and workforce.',
             ]}
           />
         </div>

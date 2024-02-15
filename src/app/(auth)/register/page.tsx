@@ -31,7 +31,7 @@ export default function Register() {
         Already registered?{' '}
         <Link
           href="/login"
-          className="font-medium text-blue-600 hover:underline"
+          className="font-medium text-green-600 hover:underline"
         >
           Sign in
         </Link>{' '}
@@ -87,7 +87,7 @@ export default function Register() {
             id={useId()}
             type="datetime-local"
             autoComplete="bday"
-            className="block w-full appearance-none rounded-md border border-gray-300 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-blue-500 sm:text-sm
+            className="block w-full appearance-none rounded-md border border-gray-300 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-green-500 focus:bg-white focus:outline-none focus:ring-green-500 sm:text-sm
           "
             name="appointment_date"
             aria-label="date-time"
