@@ -34,7 +34,7 @@ const features = [
   {
     title: 'Construction Site',
     description:
-      'Support our construction projects with tasks like site prep, material loading, and tool operation. Gain skills in a hands-on, outdoor environment.',
+      'Join our team of painters, carpenters, welders, plasterers, masons, and cleanup crews on house building projects and outdoor construction sites. Assist in site prep, material handling, and tool operation, gaining hands-on experience across various construction disciplines.',
     image: construction,
   },
 ]
