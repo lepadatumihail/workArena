@@ -8,7 +8,7 @@ import { AddressBook, Strategy } from '@phosphor-icons/react'
 
 export function Hero() {
   return (
-    <section className="relative  h-[100vh] overflow-hidden bg-slate-50">
+    <section className="relative h-[90vh] overflow-hidden  bg-slate-50 md:h-[100vh]">
       <Image
         className=" absolute left-1/2 top-0 max-w-none -translate-y-20 translate-x-[-40%] opacity-50 "
         src={backgroundImage}

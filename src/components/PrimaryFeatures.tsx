@@ -8,7 +8,7 @@ import { motion } from 'framer-motion'
 
 import { Container } from '@/components/Container'
 import logistics from '@/images/primary/logistics.webp'
-import warehouse from '@/images/primary/warehouse.webp'
+import construction from '@/images/primary/construction2.webp'
 import picking from '@/images/primary/picking.jpg'
 import forklift from '@/images/primary/heftruck.jpg'
 
@@ -30,6 +30,12 @@ const features = [
     description:
       'Operate forklifts to move pallets and large shipments within the warehouse. This role is crucial for maintaining inventory organization and assisting with loading and unloading delivery trucks.',
     image: forklift,
+  },
+  {
+    title: 'Construction Site',
+    description:
+      'Support our construction projects with tasks like site prep, material loading, and tool operation. Gain skills in a hands-on, outdoor environment.',
+    image: construction,
   },
 ]
 
@@ -88,9 +94,9 @@ export function PrimaryFeatures() {
                 <Tab.List className="relative z-10 flex gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
                   {features.map((feature, featureIndex) => (
                     <div
-                      key={feature.title + featureIndex}
+                      key={feature.title}
                       className={clsx(
-                        'group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-6',
+                        'group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:py-5',
                         selectedIndex === featureIndex
                           ? 'bg-slate-700'
                           : 'hover:bg-gray-100',
@@ -125,7 +131,7 @@ export function PrimaryFeatures() {
               </div>
               <Tab.Panels aria-label="Tab Panels" className="lg:col-span-7">
                 {features.map((feature, index) => (
-                  <Tab.Panel key={feature.title + index} unmount={true}>
+                  <Tab.Panel key={feature.title} unmount={true}>
                     <motion.div
                       initial={{ opacity: 0, y: 20 }} // Initial animation values
                       animate={{ opacity: 1, y: 0 }} // Animation values when tab is selected
@@ -135,16 +141,16 @@ export function PrimaryFeatures() {
                     >
                       <div className="relative sm:px-6 lg:hidden">
                         <div className="absolute -inset-x-4 bottom-[-4.25rem] top-[-6.5rem] bg-white/10 ring-1 ring-inset ring-white/10 sm:inset-x-0 sm:rounded-t-xl" />
-                        <p className="relative mx-auto max-w-2xl text-base text-white sm:text-center">
+                        <p className="relative mx-auto max-w-2xl text-base  sm:text-center">
                           {feature.description}
                         </p>
                       </div>
                       <div className="relative z-50 mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-gray-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
                         <Image
-                          className="max-h-[600px] w-[28rem] object-cover sm:w-full"
+                          className="max-h-[650px] w-[28rem] object-cover sm:w-full"
                           src={feature.image}
                           alt=""
-                          priority
+                          priority={true}
                           sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 25rem"
                         />
                       </div>

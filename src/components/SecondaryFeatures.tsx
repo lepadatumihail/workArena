@@ -229,7 +229,7 @@ function FeaturesDesktop() {
 
 export function SecondaryFeatures() {
   return (
-    <section id="secondary-features" className="pb-14 pt-20 lg:pb-32">
+    <section id="secondary-features" className="pb-14 pt-4 md:pt-20 lg:pb-32">
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h1 className="font-display text-3xl font-medium  tracking-tight text-gray-900  sm:text-6xl">
